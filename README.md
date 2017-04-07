@@ -1,11 +1,5 @@
-## Ani Theme - Free AngularJS Dashboard Starter Theme
+## Angular 1 chat project using Quickblox API
 
-## [Demo](http://rawgit.com/start-angular/ani-theme/master/dist/index.html)
-
-Ani Theme is a Boilerplate for Animated AngularJS Starter Theme written with Bootstrap LESS. Powered by Gulp.
-![Preview](/examples/preview.png)
-
-Find out more [Free Angular Themes at StartAngular.com](http://www.startangular.com/).
 
 ## Installation
 1. Clone this project or Download that ZIP file
