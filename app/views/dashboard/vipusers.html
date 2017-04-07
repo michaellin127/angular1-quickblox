@@ -1,0 +1,8 @@
+<div dw-loading="loadingChat" dw-loading-options="{text: 'Loading Chat...'}" class="vipusers-page">
+	<div class="row">
+		<div class="col-sm-6">
+			<input placeholder="Search" type="text" ng-model="filterText" ng-change="onFilterChanged(filterText)"/>
+		</div>
+	</div>
+	<div ag-grid="gridOptions" class="ag-blue vipusers-table"></div>
+</div>

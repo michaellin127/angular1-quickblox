@@ -1,0 +1,28 @@
+<div class="dashboard-page">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar">
+
+       <div class="text-center">
+        <h2 class="brand">Chitchat <br /><small>Web Portal</small></h2>
+        <img src="images/flat-avatar.png" class="user-avatar" /><br />
+        <h2 class="brand" style="padding-top: 0px; margin-top: 10px"><small>{{username}}</small></h2>
+        <!-- <a ui-sref="login" class="btn btn-white btn-outline btn-rounded btn-sm">Logout</a> -->
+        <a class="btn btn-danger btn-rounded" ng-click="logout()" aria-label="Left Align">
+          <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout
+        </a>
+      </div>
+
+      <ul class="nav nav-sidebar">
+        <li ng-class="{active: $state.includes('users')}"><a ui-sref="users">Users <span class="sr-only">(current)</span></a></li>
+        <li ng-class="{active: $state.includes('vipusers')}"><a ui-sref="vipusers">VIP Users <span class="sr-only">(current)</span></a></li>
+        <li ng-class="{active: $state.includes('chat')}"><a ui-sref="chat">Chat <span class="sr-only">(current)</span></a></li>
+        <li ng-class="{active: $state.includes('auto')}"><a ui-sref="auto">Auto <span class="sr-only">(current)</span></a></li>
+      </ul>
+
+    </div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ui-view>
+    </div>
+  </div>
+</div>
+</div>

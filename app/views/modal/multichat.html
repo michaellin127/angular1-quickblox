@@ -1,0 +1,15 @@
+<div class="modal-content" dw-loading="SendingChat" dw-loading-options="{text: 'Sending Chat...'}">
+	<div class="modal-header">
+		<h3 class="modal-title text-center">Send messages</h3>
+	</div>
+	<div class="modal-body">
+		<div class="form-group">
+			<label for="message">Message:</label>
+			<textarea class="form-control" rows="5" id="message" ng-model="message"></textarea>
+		</div>
+	</div>
+	<div class="modal-footer text-center">
+		<a class="btn btn-secondary btn-with-icon btn-no-border btn-href decoration-underline" ng-click="$dismiss()"><i class="ion-chevron-left"></i>Cancel</a>
+		<button class="btn  btn-primary" ng-click="sendMultiChat(message)">Send</button>
+	</div>
+</div>
